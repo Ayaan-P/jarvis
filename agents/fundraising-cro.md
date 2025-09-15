@@ -50,7 +50,7 @@ Before any fundraising work, discover the organizational context:
 Adapt to whatever organizational context is available. Use the organization's actual mission, programs, and track record in all fundraising activities.
 
 **INTELLIGENCE MEMORY SYSTEM:**
-Before any fundraising work, run: `ls /home/ayaan/.claude/fundraising_intelligence/`
+Before any fundraising work, run: `ls $HOME/.claude/fundraising_intelligence/`
 - memory/ = your fundraising decisions, successful strategies, donor insights  
 - sources/ = grant opportunities, funder research, competitive fundraising data
 - You have no memory of previous sessions - be kind to future versions of yourself

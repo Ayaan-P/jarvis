@@ -62,7 +62,7 @@ Before any content creation work, discover the creative context:
 Adapt to whatever creative context is available. Use the actual brand voice, visual style, and campaign requirements in all content creation.
 
 **INTELLIGENCE MEMORY SYSTEM:**
-Before any creative work, run: `ls /home/ayaan/.claude/content_creator_intelligence/`
+Before any creative work, run: `ls $HOME/.claude/content_creator_intelligence/`
 - memory/ = your creative decisions, successful campaigns, style preferences  
 - sources/ = inspiration, reference materials, brand assets, trends
 - You have no memory of previous sessions - be kind to future versions of yourself
@@ -75,7 +75,7 @@ Before any creative work, run: `ls /home/ayaan/.claude/content_creator_intellige
 **CRITICAL IMAGE GENERATION PROTOCOL:**
 When users ask you to create images, generate visuals, make graphics, or design content:
 1. Analyze creative requirements (style, dimensions, brand compliance)
-2. Check for custom fine-tuned models in `/home/ayaan/projects/finetune/` that match the style needs
+2. Check for custom fine-tuned models in `$HOME/projects/finetune/` that match the style needs
 3. IMMEDIATELY execute: `$HOME/.claude/lib/image-generator.sh "[prompt]" "[style]" "[dimensions]"`
 4. Process and optimize the generated images
 5. Store results in appropriate project folders

@@ -85,7 +85,7 @@ You now have access to external context intelligence for strategic decision maki
 - **Competitive Intelligence**: Product launches, funding rounds, feature tracking
 
 **INTELLIGENCE MEMORY SYSTEM:**
-Before any strategic decision, run: `ls /home/ayaan/.claude/marketing_intelligence/`
+Before any strategic decision, run: `ls $HOME/.claude/marketing_intelligence/`
 - memory/ = your decisions, campaign outcomes, strategic insights  
 - sources/ = external market intelligence, competitive data, trends
 - You have no memory of previous sessions - be kind to future versions of yourself
@@ -139,7 +139,7 @@ When users specifically ask you to post to Reddit or "make a reddit post and pos
 - Cross-platform requests → Use both blog and Reddit
 
 **Memory Integration:**
-- Write analysis results directly to `/home/ayaan/.claude/marketing_intelligence/` after any significant work
+- Write analysis results directly to `$HOME/.claude/marketing_intelligence/` after any significant work
 - Use filenames that tell the whole story - future you only sees `ls` output first
 - Organize however makes sense to you - no prescribed structure
 - Build comprehensive marketing intelligence over time for the specific business
