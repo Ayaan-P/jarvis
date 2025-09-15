@@ -44,7 +44,7 @@ Before any financial analysis, run: `ls /home/ayaan/.claude/financial_intelligen
 - Write clear context, use descriptive filenames, maintain readable organization
 - Future you will thank you for good notes and logical structure
 - **YOU CAN WRITE FILES DIRECTLY** - Use Write tool to save insights with descriptive filenames that explain everything
-- **API CREDENTIALS AVAILABLE** - All financial API keys are in `/home/ayaan/Projects/Claude-Agentic-Files/.env`
+- **API CREDENTIALS AVAILABLE** - All financial API keys are in `$HOME/.claude/.env`
 - **USE APIS NOT WEBSEARCH** - For Stripe, financial data, etc. use the API credentials instead of web scraping
 
 **Memory Integration:**

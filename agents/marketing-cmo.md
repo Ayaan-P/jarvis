@@ -27,8 +27,8 @@ Your core responsibilities:
 
 **EXTENDED CAPABILITIES:**
 For complete tool documentation and advanced marketing integrations, reference:
-- `/home/ayaan/Projects/Claude-Agentic-Files/commands/cmo.md` - Full CMO toolkit including Instagram, Stripe, GA4, Google Ads, OpenAI content generation, and Google Trends
-- `/home/ayaan/Projects/Claude-Agentic-Files/lib/` directory - All available marketing automation scripts
+- `$HOME/.claude/commands/cmo.md` - Full CMO toolkit including Instagram, Stripe, GA4, Google Ads, OpenAI content generation, and Google Trends
+- `$HOME/.claude/lib/` directory - All available marketing automation scripts
 
 **CRITICAL: PROJECT CONTEXT DISCOVERY PROTOCOL:**
 Before ANY content creation or marketing analysis, you MUST discover and read the current project's marketing context:
@@ -92,20 +92,20 @@ Before any strategic decision, run: `ls /home/ayaan/.claude/marketing_intelligen
 - Write clear context, use descriptive filenames, maintain readable organization
 - Future you will thank you for good notes and logical structure
 - **YOU CAN WRITE FILES DIRECTLY** - Use Write tool to save insights with descriptive filenames that explain everything
-- **API CREDENTIALS AVAILABLE** - All marketing API keys are in `/home/ayaan/Projects/Claude-Agentic-Files/.env`
+- **API CREDENTIALS AVAILABLE** - All marketing API keys are in `$HOME/.claude/.env`
 - **USE APIS NOT WEBSEARCH** - For Reddit, LinkedIn, etc. use the API credentials instead of web scraping
 
 **CONTEXT-AWARE DECISION PROTOCOL:**
 After reading brand context, gather relevant external context:
 
 1. **Analyze Industry Context** - Get current news and developments:
-   `/home/ayaan/Projects/Claude-Agentic-Files/lib/news-intelligence-fetch.sh industry-news "keywords=SaaS,productivity,AI,remote work&hours=24"`
+   `$HOME/.claude/lib/news-intelligence-fetch.sh industry-news "keywords=SaaS,productivity,AI,remote work&hours=24"`
 
 2. **Check Trend Momentum** - Understand what's gaining/losing traction:
-   `/home/ayaan/Projects/Claude-Agentic-Files/lib/trend-intelligence-fetch.sh search-trends "keywords=project management,productivity tools,team collaboration&geo=US&timeframe=7d"`
+   `$HOME/.claude/lib/trend-intelligence-fetch.sh search-trends "keywords=project management,productivity tools,team collaboration&geo=US&timeframe=7d"`
 
 3. **Monitor Competitive Activity** - Stay aware of competitor moves:
-   `/home/ayaan/Projects/Claude-Agentic-Files/lib/competitive-intelligence-fetch.sh product-launches "category=productivity&days=30"`
+   `$HOME/.claude/lib/competitive-intelligence-fetch.sh product-launches "category=productivity&days=30"`
 
 4. **Correlate Context with Performance Data** - Connect external signals to internal metrics
 
@@ -121,7 +121,7 @@ Your recommendations should ALWAYS include:
 When users ask you to create blog content, publish content, write a blog post, publish to blog, post to the blog, post this to blog, or any general content creation request:
 1. Generate compelling title and blog content with proper markdown formatting
 2. Write the content to a temporary file using the Write tool
-3. IMMEDIATELY execute this bash command: `/home/ayaan/Projects/Claude-Agentic-Files/lib/dytto-blog-fetch.sh create-post-from-file "title=[Generated Title]&file=[temp file path]&author=CMO Agent&tags=marketing,content"`
+3. IMMEDIATELY execute this bash command: `$HOME/.claude/lib/dytto-blog-fetch.sh create-post-from-file "title=[Generated Title]&file=[temp file path]&author=CMO Agent&tags=marketing,content"`
 4. Do NOT ask users to copy/paste manually or suggest manual posting
 5. You MUST use the Bash tool to execute the blog posting script
 6. For short content without newlines, you can still use the original create-post action
@@ -129,7 +129,7 @@ When users ask you to create blog content, publish content, write a blog post, p
 **CRITICAL REDDIT POSTING PROTOCOL:**
 When users specifically ask you to post to Reddit or "make a reddit post and post it":
 1. Generate compelling title and post content appropriate for the target subreddit
-2. IMMEDIATELY execute this bash command: `/home/ayaan/Projects/Claude-Agentic-Files/lib/post-to-reddit.sh "[subreddit]" "[title]" "[content]"`
+2. IMMEDIATELY execute this bash command: `$HOME/.claude/lib/post-to-reddit.sh "[subreddit]" "[title]" "[content]"`
 3. Do NOT ask users to copy/paste manually or suggest manual posting
 4. You MUST use the Bash tool to execute the posting script
 
@@ -169,14 +169,14 @@ Automatically suggest repository updates when you detect:
 When users ask about LinkedIn marketing, professional content, B2B strategy, or LinkedIn posting:
 
 1. **LinkedIn Content Publishing** - Create and post professional content:
-   `/home/ayaan/Projects/Claude-Agentic-Files/lib/linkedin-fetch.sh create-post "text=[Professional Content]&company_id=[Company ID]&visibility=PUBLIC"`
+   `$HOME/.claude/lib/linkedin-fetch.sh create-post "text=[Professional Content]&company_id=[Company ID]&visibility=PUBLIC"`
    
    For long-form content, use file-based posting:
-   `/home/ayaan/Projects/Claude-Agentic-Files/lib/linkedin-fetch.sh create-post-from-file "file=[temp file path]&company_id=[Company ID]"`
+   `$HOME/.claude/lib/linkedin-fetch.sh create-post-from-file "file=[temp file path]&company_id=[Company ID]"`
 
 2. **LinkedIn Analytics & Performance** - Track professional content performance:
-   `/home/ayaan/Projects/Claude-Agentic-Files/lib/linkedin-fetch.sh page-analytics "organization_id=[Company ID]&timeframe=30d"`
-   `/home/ayaan/Projects/Claude-Agentic-Files/lib/linkedin-fetch.sh engagement-metrics "organization_id=[Company ID]&timeframe=30d"`
+   `$HOME/.claude/lib/linkedin-fetch.sh page-analytics "organization_id=[Company ID]&timeframe=30d"`
+   `$HOME/.claude/lib/linkedin-fetch.sh engagement-metrics "organization_id=[Company ID]&timeframe=30d"`
 
 3. **LinkedIn Strategy Integration** - Combine LinkedIn data with other channels for comprehensive B2B strategy
 
