@@ -4,7 +4,8 @@ Transform Claude into your complete business automation system.
 
 ## Install (30 seconds)
 ```bash
-curl -sSL https://get.claude.business | bash
+git clone https://github.com/Ayaan-P/jarvis.git
+cd jarvis && ./install.sh
 ```
 
 ## Use

@@ -23,14 +23,14 @@ echo "🤖 Installing business agents..."
 cp agents/*.md "$CLAUDE_AGENTS_DIR/"
 
 # Install automation scripts
-CLAUDE_LIB_DIR="$HOME/Projects/Claude-Agentic-Files/lib"
+CLAUDE_LIB_DIR="$HOME/.claude/lib"
 mkdir -p "$CLAUDE_LIB_DIR"
 cp -r lib/* "$CLAUDE_LIB_DIR/"
 
 # Set up environment
-if [ ! -f "$HOME/Projects/Claude-Agentic-Files/.env" ]; then
-    cp .env.template "$HOME/Projects/Claude-Agentic-Files/.env"
-    echo "📝 Environment template created at $HOME/Projects/Claude-Agentic-Files/.env"
+if [ ! -f "$HOME/.claude/.env" ]; then
+    cp .env.template "$HOME/.claude/.env"
+    echo "📝 Environment template created at $HOME/.claude/.env"
     echo "   Edit this file with your API keys"
 fi
 
